@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon</title>
+  <link rel="stylesheet" href="/dist/output.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      background:lightblue;
+    }
+
+    h1 {    
+      margin: 40px;
+      text-transform: uppercase;
+      text-align: center;
+      font-family:sans-serif;
+      color: #089eca;
+      font-size: 3em;
+    }
+
+    ul {
+      justify-content: center;
+      justify-items: center;
+      font-size: small;
+      background-color: transparent;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    li {
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      width: 25%;
+      font-size: 1.5rem;
+      color: #b48484;
+      margin-bottom: 70px;
+      transition: all .2s ease-in-out;
+      background-color:lemonchiffon;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 5px;
+    }
+
+    .stats{
+      background-color: transparent;
+    }
+    div {
+      margin-bottom: 0px;
+      padding: 5px;
+      justify-content: center;
+      font-size: medium;
+
+    }
+
+    h3 {
+      font: bold;
+      background-color: transparent;
+      color: blue;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: small;
+      background-color: transparent;
+      text-transform: capitalize;
+      margin-top: 10px;
+    }
+
+    img {
+      justify-content: center;
+      justify-items: center;
+      background-color: transparent;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      transition:linear;
+    }
+
+    p {
+      font-size: medium;
+      background-color: transparent;
+    }
+
+    li:hover {
+      transform: scale(1.1);
+    }
+  
+      @media screen and (max-width: 600px) {
+  .pokedex {
+    max-width: 90%;
+  }
+
+  li {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  li {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  li {
+    width: 25%;
+  }
+}
+
+    
+
+  </style>
+</head>
+
+<body>
+
+  <h1 >POKEMON</h1>
+  <ul id="pokemon"></ul>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
